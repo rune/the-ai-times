@@ -102,7 +102,7 @@ export async function shareStory(authorId: string, story: Story) {
     ctx.font = "60px Basker-regular"
     ctx.fillStyle = "black"
     ctx.textAlign = "left"
-    wrapText(ctx, story.subtitle, 100, 720, 450, 60)
+    wrapText(ctx, story.subtitle, 100, 700, 450, 60)
 
     ctx.font = "50px Basker-regular"
     ctx.fillStyle = "black"
