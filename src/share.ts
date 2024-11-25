@@ -88,10 +88,10 @@ export async function shareStory(authorId: string, story: Story) {
 
     let date = new Date().toString()
     date = date.substring(0, 10).trim()
-    ctx.font = "60px Basker-regular"
+    ctx.font = "40px Basker-regular"
     ctx.fillStyle = "#666"
     ctx.textAlign = "left"
-    ctx.fillText(date, 100, 630)
+    ctx.fillText(date, 100, 620)
     ctx.font = "30px Basker-rgeular"
     ctx.fillText("WRITTEN BY", 100, 1610)
     ctx.drawImage(playerAvatar, 100, 1620, 60, 60)
@@ -102,7 +102,7 @@ export async function shareStory(authorId: string, story: Story) {
     ctx.font = "60px Basker-regular"
     ctx.fillStyle = "black"
     ctx.textAlign = "left"
-    wrapText(ctx, story.subtitle, 100, 730, 450, 60)
+    wrapText(ctx, story.subtitle, 100, 720, 450, 60)
 
     ctx.font = "50px Basker-regular"
     ctx.fillStyle = "black"
