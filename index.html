@@ -16,9 +16,9 @@
         <div class="nameMain">A.I.</div>
         <div class="nameSubtext">Times</div>
       </div>
-      <div id="captionScreen" class="screen off">
+      <div id="captionScreen" class="screen enabled">
         <div class="tagLine">We Report The News Before The News</div>
-        <div id="captionImage"><img src="src/assets/images/1.png" /></div>
+        <div id="captionImage"><img id="targetImage" /></div>
         <div class="label">Caption this image</div>
         <div id="playerInputContainer">
           <textarea id="playerInput"></textarea>
@@ -28,17 +28,19 @@
         </div>
       </div>
       <div id="reviewScreen" class="screen off">
-        <div class="headline">Trike Rocket!</div>
+        <div id="headline" class="headline">Trike Rocket!</div>
         <div class="subline">
           <div class="bylineSection">
-            <div class="date">Thu Nov 21</div>
-            <div class="byline">
+            <div id="date" class="date">Thu Nov 21</div>
+            <div id="subtitle" class="byline">
               Woman Sets Speed Record with Megaphone Power
             </div>
           </div>
-          <div class="paperImage"><img src="src/assets/images/1.png" /></div>
+          <div class="paperImage">
+            <img id="paperImage1" src="src/assets/images/1.png" />
+          </div>
         </div>
-        <div class="story">
+        <div id="story" class="story">
           In a bizarre twist on speed racing, Karen Vox just set a new record
           using nothing but her voice—and a trusty megaphone. Barreling down the
           street on a toddler-sized trike, Vox reached ear-splitting speeds as
@@ -51,7 +53,6 @@
       </div>
       <div id="voteScreen" class="screen off">
         <div class="label">Pick your favorite article</div>
-        <div class="labelSmall">(you can't pick your own!)</div>
 
         <div id="articles">
           <div class="voteButton voteButtonSelected">Trike Rocket!</div>
@@ -63,30 +64,35 @@
           <div id="voteTimer" class="timerBar"></div>
         </div>
       </div>
-      <div id="resultScreen" class="screen enabled">
-
-        <div class="headline">Trike Rocket!</div>
+      <div id="resultScreen" class="screen off">
+        <div id="resultHeadline" class="headline">Trike Rocket!</div>
         <div class="subline">
           <div class="bylineSection">
-            <div class="date">Thu Nov 21</div>
-            <div class="byline">
+            <div id="resultDate" class="date">Thu Nov 21</div>
+            <div id="resultSubtitle" class="byline">
               Woman Sets Speed Record with Megaphone Power
             </div>
           </div>
-          <div class="paperImage"><img src="src/assets/images/1.png" /></div>
+          <div class="paperImage">
+            <img id="paperImage2" src="src/assets/images/1.png" />
+          </div>
         </div>
-        <div class="story">
-          In a bizarre twist on speed racing, Karen Vox just set a new record
-          using nothing but her voice—and a trusty megaphone. Barreling down the
-          street on a toddler-sized trike, Vox reached ear-splitting speeds as
-          she yelled her way to victory. Locals are still recovering from the
-          sonic boom!
+        <div id="resultStory" class="story">
+          In a bizarre twist, a father of two was replaced by a giant hamster,
+          and his family didn’t bat an eye. The hamster, nicknamed Cheddar,
+          reportedly handled chores and bedtime stories seamlessly. “He’s just a
+          bit fuzzier,” said one child, sparking a social media frenzy over the
+          furry swap!
         </div>
         <div id="footer">
           <div id="author">
             <div class="date">Written By</div>
             <div class="playerSection">
-              <img id="playerAvatar" src="https://developers.rune.ai/img/avatar-placeholder.png" class="avatar"/>
+              <img
+                id="playerAvatar"
+                src="https://developers.rune.ai/img/avatar-placeholder.png"
+                class="avatar"
+              />
               <div id="playerName">Coke and Code</div>
             </div>
           </div>

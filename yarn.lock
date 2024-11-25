@@ -1021,6 +1021,11 @@ micromatch@^4.0.4:
     braces "^3.0.3"
     picomatch "^2.3.1"
 
+mime@^4.0.1:
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/mime/-/mime-4.0.4.tgz#9f851b0fc3c289d063b20a7a8055b3014b25664b"
+  integrity sha512-v8yqInVjhXyqP6+Kw4fV3ZzeMRqEW6FotRsKXjRS5VMTNIuXsdRoAvklpoRgSqXm6o9VNH4/C0mgedko9DdLsQ==
+
 minimatch@^3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.1.2.tgz#19cd194bfd3e428f049a70817c038d89ab4be35b"
@@ -1376,6 +1381,13 @@ uri-js@^4.2.2:
   integrity sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==
   dependencies:
     punycode "^2.1.0"
+
+vite-plugin-data-url@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/vite-plugin-data-url/-/vite-plugin-data-url-1.0.0.tgz#09a65bf604ba57b966af8f31724a88e0c5f80e8b"
+  integrity sha512-RtRBxe+iNo3GTRPZOcvuq9x58pB3MlEfOuZeKe6Bl7tfvAzQVy/g4GEFFLsk+8CpahBrSlff36g+z3fYxE7Wfg==
+  dependencies:
+    mime "^4.0.1"
 
 vite-plugin-qrcode@^0.2.2:
   version "0.2.3"
