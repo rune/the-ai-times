@@ -1,4 +1,5 @@
-import { REVIEW_TIMER_LENGTH } from "./logic"
+import { REVIEW_TIMER_LENGTH, Story } from "./logic"
+import { shareStory } from "./share"
 import "./styles.css"
 
 // Easy accessor for assets via name rather than static
@@ -21,7 +22,7 @@ function div(id: string): HTMLDivElement {
   return document.getElementById(id) as HTMLDivElement
 }
 
-function img(id: string): HTMLImageElement {
+export function img(id: string): HTMLImageElement {
   return document.getElementById(id) as HTMLImageElement
 }
 
@@ -45,6 +46,14 @@ function showScreen(screen: string) {
 }
 
 let localPlayerId: string | undefined = undefined
+let winner: string | undefined = undefined
+let winningStory: Story | undefined = undefined
+
+div("shareButton").addEventListener("click", () => {
+  if (winner && winningStory) {
+    shareStory(winner, winningStory)
+  }
+})
 
 setInterval(() => {
   if (currentScreen === "captionScreen") {
@@ -125,6 +134,9 @@ Rune.initClient({
       div("voteTimer").style.width = percent
     }
     if (game.timerName === "results") {
+      winningStory = game.stories[game.winner]
+      winner = game.winner
+
       div("winnersEdition").style.display = "block"
       if (currentScreen !== "resultsScreen") {
         div("playerName").innerHTML =
