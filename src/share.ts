@@ -136,7 +136,7 @@ export async function shareStory(authorId: string, story: Story) {
     ctx.fillRect(350, 100, 100, 5)
     ctx.fillRect(620, 100, 130, 5)
     ctx.translate(150, 550)
-   
+
     Rune.showShareImage(canvas.toDataURL("image/png", 1))
   }
 }
