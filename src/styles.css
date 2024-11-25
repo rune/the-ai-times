@@ -1,0 +1,326 @@
+
+@font-face {
+  font-family: "Basker-bold";
+  src: url("./assets/LibreBaskerville-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Basker-regular";
+  src: url("./assets/LibreBaskerville-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Basker-italic";
+  src: url("./assets/LibreBaskerville-Italic.ttf");
+}
+
+@font-face {
+  font-family: "Chomsky";
+  src: url("./assets/Chomsky.ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/Inter.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#page {
+  background-image: url(assets/background.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#paperName {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  font-family: "Chomsky";
+}
+
+#winnersEdition {
+  background-color: #9AC69A;
+  font-family: "Basker-regular";
+  background-image: url(assets/winners.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 5vh;
+  line-height: 5.5vh;
+  font-size: 2vh;
+  text-align: center;
+  /* display: none; */
+}
+
+.tagLine {
+  font-family: "Basker-regular";
+  width: 90%;
+  margin-left: 5%;
+  text-transform: uppercase;
+  font-size: 3.6vw;
+  border-bottom: 0.25vh solid black;
+  text-align: justify;
+  line-height: 7vw;
+}
+
+.tagLine:after {
+  content: "";
+  border-bottom: 0.25vh solid black;
+  display: block;
+  margin-bottom: 0.25vh;
+}
+
+.headline {
+  font-family: "Basker-regular";
+  width: 90%;
+  margin-left: 5%;
+  text-transform: uppercase;
+  font-size: 7vw;
+  border-top: 0.4vh solid black;
+  border-bottom: 0.4vh solid black;
+  text-align: center;
+  line-height: 12vw;
+}
+
+.headline:before {
+  content: "";
+  border-bottom: 0.4vh solid black;
+  display: block;
+  margin-top: 0.25vh;
+}
+
+.headline:after {
+  content: "";
+  border-bottom: 0.4vh solid black;
+  display: block;
+  margin-bottom: 0.25vh;
+}
+
+.label {
+  font-family: "Basker-bold";
+  font-size: 2.5vh;
+  margin-left: 5%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+
+.labelSmall {
+  font-family: "Basker-bold";
+  font-size: 2vh;
+  margin-left: 5%;
+}
+
+#articles {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-top: 5%;
+  width: 90%;
+}
+
+.voteButton {
+  font-family: "Basker-regular";
+  width: calc(100% - 2vh);
+  border: 1px solid black;
+  height: 5vh;
+  line-height: 5vh;
+  padding: 1vh;
+  margin-bottom: 2vh;
+  font-size: 2.25vh;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.voteButtonSelected {
+  font-family: "Basker-bold";
+  background-color: #9AC69A;
+}
+
+.voteButtonSelected:after {
+  content: "";
+  background-image: url(./assets/tick.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  width: 3vh;
+  height: 2vh;
+  right: 2vh;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.subline {
+  display: flex;
+  width: 90%;
+  margin-left: 5%;
+  padding-top: 5%;
+}
+
+.paperImage {
+  width: 50%;
+}
+
+.date {
+  font-family: "Basker-regular";
+  color: #777;
+  font-size: 2vh;
+  text-transform: uppercase;
+}
+
+.byline {
+  font-family: "Basker-bold";
+  font-size: 2.5vh;
+  margin-top: 1vh;
+}
+
+.story {
+  font-family: "Basker-bold";
+  width: 90%;
+  margin-left: 5%;
+  text-align: justify;
+  font-size: 2.2vh;
+  padding-bottom: 10%;
+  border-bottom: 0.2vh solid #777;
+}
+
+.paperImage img {
+  width: 45vw;
+  filter: grayscale(100%);
+}
+
+#playerInputContainer {
+  width: 80%;
+  margin-left: 5%;
+  padding: 5%;
+  border-radius: 10px;
+  height: 23vw;
+  background: black;
+}
+
+#playerInput {
+  font-family: "Inter";
+  resize: none;
+  background: black;
+  color: white;
+  outline: 0;
+  border: 0;
+}
+
+#captionImage {
+  width: 100%;
+  text-align: center;
+  margin-top: 5%;
+}
+
+#captionImage img {
+  width: 70%;
+}
+
+.nameSubtext {
+  font-size: 7vh;
+  margin-top: 3.5vh;
+  border-top: 0.5vh solid black;
+  border-bottom: 0.5vh solid black;
+  line-height: 7.5vh;
+  height: 7vh;
+}
+
+.timer {
+  width: 90%;
+  margin-left: 5%;
+  background: #C5C5C5;
+  position: absolute;
+  bottom: 5%;
+  height: 4%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.timerBar {
+  width: 50%;
+  height: 100%;
+  background: #68AA68;
+}
+
+.nameMain {
+  font-size: 12vh;
+}
+
+#footer {
+  display: flex;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 3%;
+}
+
+#author {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.playerSection {
+  display: flex;
+  line-height: 4.5vh;
+  margin-top: 0.5vh;
+}
+
+#playerName {
+  font-family: "Basker-regular";
+  margin-left: 1vh;
+  font-size: 2vh;
+}
+
+#share {
+  width: 50%;
+  text-align: right;
+}
+
+#shareButton {
+  font-family: "Basker-regular";
+  background: #9AC69A;
+  display: inline-block;
+  padding: 1.5vh;
+  padding-left: 4vh;
+  padding-right: 4vh;
+  border: 1px solid black;
+}
+
+.avatar {
+  width: 4vh;
+  height: 4vh;
+}
+.screen {
+  opacity: 0;
+  height: 0;
+}
+
+.enabled {
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.off {
+  pointer-events: none;
+  opacity: 0;
+}

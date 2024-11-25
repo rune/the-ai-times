@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <title>The AI Times</title>
+  </head>
+  <body>
+    <div id="page">
+      <div id="winnersEdition">WINNERS EDITION</div>
+      <div id="paperName">
+        <div class="nameSubtext">The</div>
+        <div class="nameMain">A.I.</div>
+        <div class="nameSubtext">Times</div>
+      </div>
+      <div id="captionScreen" class="screen off">
+        <div class="tagLine">We Report The News Before The News</div>
+        <div id="captionImage"><img src="src/assets/images/1.png" /></div>
+        <div class="label">Caption this image</div>
+        <div id="playerInputContainer">
+          <textarea id="playerInput"></textarea>
+        </div>
+        <div class="timer">
+          <div id="captionTimer" class="timerBar"></div>
+        </div>
+      </div>
+      <div id="reviewScreen" class="screen off">
+        <div class="headline">Trike Rocket!</div>
+        <div class="subline">
+          <div class="bylineSection">
+            <div class="date">Thu Nov 21</div>
+            <div class="byline">
+              Woman Sets Speed Record with Megaphone Power
+            </div>
+          </div>
+          <div class="paperImage"><img src="src/assets/images/1.png" /></div>
+        </div>
+        <div class="story">
+          In a bizarre twist on speed racing, Karen Vox just set a new record
+          using nothing but her voice—and a trusty megaphone. Barreling down the
+          street on a toddler-sized trike, Vox reached ear-splitting speeds as
+          she yelled her way to victory. Locals are still recovering from the
+          sonic boom!
+        </div>
+        <div class="timer">
+          <div id="reviewTimer" class="timerBar"></div>
+        </div>
+      </div>
+      <div id="voteScreen" class="screen off">
+        <div class="label">Pick your favorite article</div>
+        <div class="labelSmall">(you can't pick your own!)</div>
+
+        <div id="articles">
+          <div class="voteButton voteButtonSelected">Trike Rocket!</div>
+          <div class="voteButton">Megaphone Mayhem!</div>
+          <div class="voteButton">Full Throttle Talk!</div>
+          <div class="voteButton">Shoutout Speedster!</div>
+        </div>
+        <div class="timer">
+          <div id="voteTimer" class="timerBar"></div>
+        </div>
+      </div>
+      <div id="resultScreen" class="screen enabled">
+
+        <div class="headline">Trike Rocket!</div>
+        <div class="subline">
+          <div class="bylineSection">
+            <div class="date">Thu Nov 21</div>
+            <div class="byline">
+              Woman Sets Speed Record with Megaphone Power
+            </div>
+          </div>
+          <div class="paperImage"><img src="src/assets/images/1.png" /></div>
+        </div>
+        <div class="story">
+          In a bizarre twist on speed racing, Karen Vox just set a new record
+          using nothing but her voice—and a trusty megaphone. Barreling down the
+          street on a toddler-sized trike, Vox reached ear-splitting speeds as
+          she yelled her way to victory. Locals are still recovering from the
+          sonic boom!
+        </div>
+        <div id="footer">
+          <div id="author">
+            <div class="date">Written By</div>
+            <div class="playerSection">
+              <img id="playerAvatar" src="https://developers.rune.ai/img/avatar-placeholder.png" class="avatar"/>
+              <div id="playerName">Coke and Code</div>
+            </div>
+          </div>
+          <div id="share">
+            <div id="shareButton">SHARE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/logic.ts"></script>
+    <script type="module" src="/src/client.ts"></script>
+  </body>
+</html>
