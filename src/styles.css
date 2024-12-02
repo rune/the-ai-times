@@ -298,11 +298,11 @@ body {
   font-family: "Basker-regular";
   background: #9AC69A;
   display: inline-block;
-  padding: 1.5vh;
+  padding: 1vh;
   padding-left: 4vh;
   padding-right: 4vh;
   border: 1px solid black;
-  transform: translate(0, -90%);
+  transform: translate(0, -150%);
 }
 
 .avatar {
