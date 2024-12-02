@@ -1,8 +1,8 @@
 import type { PlayerId, RuneClient } from "rune-sdk"
 import { IMAGE_DESCRIPTION, PROMPT } from "./prompt"
-export const CAPTION_TIMER_LENGTH = 10000
-export const REVIEW_TIMER_LENGTH = 10000
-export const VOTE_TIMER_LENGTH = 15000
+export const CAPTION_TIMER_LENGTH = 20000
+export const REVIEW_TIMER_LENGTH = 20000
+export const VOTE_TIMER_LENGTH = 20000
 export const RESULT_TIMER_LENGTH = 150000
 
 export interface Story {
