@@ -3,7 +3,7 @@ import { IMAGE_DESCRIPTION, PROMPT } from "./prompt"
 export const CAPTION_TIMER_LENGTH = 20000
 export const REVIEW_TIMER_LENGTH = 20000
 export const VOTE_TIMER_LENGTH = 20000
-export const RESULT_TIMER_LENGTH = 150000
+export const RESULT_TIMER_LENGTH = 5000
 
 export interface Story {
   headline: string
@@ -173,12 +173,22 @@ Rune.initLogic({
         }
 
         startTimer(game, "results", RESULT_TIMER_LENGTH)
+      } else if (game.timerName === "results") {
+        Rune.gameOver({ everyone: "WON", minimizePopUp: true })
       }
     }
   },
   actions: {
-    vote: (voteFor, { game, playerId }) => {
+    vote: (voteFor, { game, playerId, allPlayerIds }) => {
       game.votes[playerId] = voteFor
+
+      for (const id of allPlayerIds) {
+        if (!game.votes[id]) {
+          return
+        }
+      }
+
+      game.timerEndsAt = Rune.gameTime() + 1000
     },
     caption: ({ name, text }, { game, playerId }) => {
       if (text.trim().length === 0) {

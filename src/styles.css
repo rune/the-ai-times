@@ -302,6 +302,7 @@ body {
   padding-left: 4vh;
   padding-right: 4vh;
   border: 1px solid black;
+  transform: translate(0, -90%);
 }
 
 .avatar {
