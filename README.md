@@ -1,28 +1,5 @@
-# Getting Started with Rune
+# Day 4 - The AI Times
 
-### `npm run dev`
+![the-ai-times](https://github.com/user-attachments/assets/8147eb51-c317-48a5-87e3-93241ddec4b1)
 
-Runs the game in Dev UI.
-
-The page will reload when you make changes.
-
-### `npm run upload`
-
-Builds the game and starts upload process to Rune.
-
-### `npm run build`
-
-Builds the game. You can then upload it to Rune using `npx rune@latest upload`.
-
-### `npm run lint`
-
-Runs the validation rules. You can read about them in the [docs on server-side logic](https://developers.rune.ai/docs/advanced/server-side-logic).
-
-### `npm run typecheck`
-
-Verifies that TypeScript is valid.
-
-
-## Learn More
-
-See the [Rune docs](https://developers.rune.ai/docs/quick-start) for more info. You can also ask any questions in the [Rune Discord](https://discord.gg/rune-devs), we're happy to help!
+A novel idea that was conceptualized by the team, in the AI Times players are presented with a random image and asked to provide a short caption. The generative AI is then prompted to create a tabloid style front page including headline and tag line. The players then vote on their favorite story to choose a winner. The combination of abstract, quirky images and the imagination of the players results in some really wonderfully silly front pages. 
