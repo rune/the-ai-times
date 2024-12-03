@@ -180,6 +180,10 @@ Rune.initLogic({
   },
   actions: {
     vote: (voteFor, { game, playerId, allPlayerIds }) => {
+      if (game.votes[playerId]) {
+        return
+      }
+
       game.votes[playerId] = voteFor
 
       for (const id of allPlayerIds) {
