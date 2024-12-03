@@ -1,4 +1,5 @@
 # Day 4 - The AI Times
+[Play!](https://join.rune.ai/game/K6CmPyI5-igE) | [Kick Off](https://www.youtube.com/watch?v=txwfVyAgvuo) | [Time Lapse](https://www.youtube.com/watch?v=9e-1mgHVeqg) | [Post-Mortem](https://www.youtube.com/watch?v=SP97rXevq6Q) 
 
 The forth in the series of 7 AI games in 7 days written for the [Rune](https://rune.ai) games app.
 
